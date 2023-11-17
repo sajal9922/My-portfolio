@@ -43,10 +43,9 @@ a {
 
 .nav-bar {
   display: flex;
-  margin: auto 8rem;
+  margin: 3rem 8rem;
   align-items: center;
   justify-content: space-between;
-  margin-top: 3rem;
 }
 
 ul {
@@ -84,4 +83,18 @@ ul {
 }
 .nav-bar .nav-item:hover:after {
   width: 100%;
+}
+
+/* -------------Hero---------- */
+
+.image-container {
+  background-image: url(./Images/Profile_image.png);
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 5rem auto;
+  box-shadow: 0 0 20px #0eab30;
 }
