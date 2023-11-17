@@ -35,7 +35,7 @@ a {
   font-size: 4rem;
 }
 
-.logo p .green {
+.green {
   color: var(--text-green);
 }
 
@@ -87,14 +87,6 @@ ul {
 
 /* -------------Hero---------- */
 
-.hero h1 {
-  text-align: center;
-  font-size: 7rem;
-  font-weight: 400;
-  /* line-height: 90px; 138.462% */
-  margin: auto 30rem;
-}
-
 .image-container {
   background-image: url(./Images/Profile_image.png);
   width: 25rem;
@@ -105,4 +97,36 @@ ul {
   background-size: cover;
   margin: 5rem auto;
   box-shadow: 0 0 20px #0eab30;
+}
+
+.hero h1 {
+  text-align: center;
+  font-size: 7rem;
+  font-weight: 400;
+  /* line-height: 90px; 138.462% */
+  margin: 5rem 30rem;
+}
+
+/* ---------------footer------------ */
+footer {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 3rem 8rem 2rem 8rem;
+  border-bottom: 2px solid var(--text-green);
+  padding-bottom: 0.5rem;
+}
+.icon img {
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.copy-right {
+  color: var(--text-color);
+  font-size: 1.3rem;
 }
