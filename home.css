@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-color: #1c1c1c;
+  --text-color: #faf9f6;
+  --text-green: #0eab30;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--body-color);
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--text-color);
+}
+
+.logo p {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.logo p .green {
+  color: var(--text-green);
+}
