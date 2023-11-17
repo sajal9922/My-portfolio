@@ -87,6 +87,14 @@ ul {
 
 /* -------------Hero---------- */
 
+.hero h1 {
+  text-align: center;
+  font-size: 7rem;
+  font-weight: 400;
+  /* line-height: 90px; 138.462% */
+  margin: auto 30rem;
+}
+
 .image-container {
   background-image: url(./Images/Profile_image.png);
   width: 25rem;
