@@ -25,7 +25,10 @@ h3,
 p {
   color: var(--text-color);
 }
-
+a {
+  text-decoration: none;
+}
+/* -----------Logo------------ */
 .logo p {
   text-transform: uppercase;
   font-weight: 700;
@@ -34,4 +37,51 @@ p {
 
 .logo p .green {
   color: var(--text-green);
+}
+
+/* -------------Navigation bar----------- */
+
+.nav-bar {
+  display: flex;
+  margin: auto 8rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 8rem;
+}
+
+.nav-item a {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+.burger-icon {
+  margin: 0;
+}
+.burger-icon img {
+  width: 2.2rem;
+  display: none;
+}
+
+.nav-bar .nav-item::after {
+  margin: 1rem;
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: var(--text-green);
+  display: block;
+  margin: 0.5rem auto;
+  transition: 0.5s;
+}
+.nav-bar .nav-item:hover:after {
+  width: 100%;
 }
