@@ -21,3 +21,12 @@ const navSlide = () => {
 };
 
 navSlide();
+
+const navLinkEls = document.querySelectorAll('.link');
+const windowPathName = window.location.pathname;
+
+navLinkEls.forEach((linkEl) => {
+  if (linkEl.href.includes(windowPathName)) {
+    linkEl.classList.add('active');
+  }
+});
