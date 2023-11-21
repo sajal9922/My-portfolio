@@ -55,6 +55,7 @@ nav {
   width: 50%;
   text-transform: uppercase;
   list-style: none;
+  overflow: hidden;
 }
 .nav-links .active {
   color: var(--text-green);
@@ -169,11 +170,68 @@ nav {
   /* line-height: 90px; 138.462% */
   margin: 5rem 30rem;
 }
+@media screen and (max-width: 1200px) {
+  .hero h1 {
+    margin: 5rem 20rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero h1 {
+    margin: 5rem 15rem;
+    font-size: 5rem;
+  }
+
+  .image-container {
+    width: 22rem;
+    height: 22rem;
+  }
+  .nav-links a {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    margin: 5rem 10rem;
+    font-size: 4rem;
+  }
+
+  .image-container {
+    width: 18rem;
+    height: 18rem;
+  }
+  .logo p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero h1 {
+    margin: 1rem 3rem;
+    font-size: 3.5rem;
+  }
+
+  .image-container {
+    width: 13rem;
+    height: 13rem;
+  }
+  .logo p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+}
 
 /* ---------------footer------------ */
 footer {
   text-align: center;
   margin-top: 1rem;
+  position: fixed;
+  bottom: 0;
+
+  right: 0;
+  left: 0;
 }
 
 .footer-icon {
@@ -192,4 +250,9 @@ footer {
 .copy-right {
   color: var(--text-color);
   font-size: 1.3rem;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    display: none;
+  }
 }
