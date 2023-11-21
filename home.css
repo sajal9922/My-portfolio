@@ -256,3 +256,43 @@ footer {
     display: none;
   }
 }
+
+/* ------------about me page--------------- */
+
+.hero .about-me-heading {
+  margin-top: unset;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+}
+
+.about-me-image {
+  height: 15rem;
+  width: 15rem;
+  margin-bottom: 2rem;
+}
+
+.body-text {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 8rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.body-text p {
+  margin-top: 1rem;
+  font-weight: 300;
+}
+
+.social-media-icon {
+  display: flex;
+  width: 262px;
+  height: 41px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  width: 100%;
+  margin: 1rem auto;
+}
