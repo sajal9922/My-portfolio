@@ -102,7 +102,7 @@ nav {
 @media only screen and (max-width: 760px) {
   nav {
     justify-content: space-between;
-    padding: 0 5vw;
+    padding: 5vw;
   }
   .nav-links {
     position: absolute;
@@ -129,7 +129,7 @@ nav {
 @media only screen and (max-width: 640px) {
   nav {
     justify-content: space-between;
-    padding: 0 5vw;
+    padding: 5vw;
   }
 }
 .nav-active {
@@ -166,7 +166,7 @@ nav {
 
 /* -------------Hero---------- */
 .hero {
-  margin-top: 10rem;
+  margin-top: 15rem;
 }
 
 .image-container {
@@ -300,11 +300,11 @@ footer {
 
 .social-media-icon {
   display: flex;
-  width: 262px;
-  height: 41px;
+  width: 26.2rem;
+  height: 4.1rem;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 1.5rem;
   flex-shrink: 0;
   width: 100%;
   margin: 2rem auto;
@@ -319,7 +319,7 @@ footer {
 .button {
   color: var(--text-color);
   padding: 1rem 2.5rem;
-  border: none;
+  border: 1px solid var(--text-green);
   border-radius: 50px;
   text-transform: uppercase;
   margin: 0 1rem;
@@ -328,9 +328,19 @@ footer {
 .fill-button {
   background-color: var(--text-green);
 }
-.border-button {
+
+.fill-button:hover {
   background: transparent;
   border: 1px solid var(--text-green);
+  color: var(--text-green);
+  transition: all 0.3s;
+}
+.border-button {
+  background: transparent;
+}
+.border-button:hover {
+  color: var(--text-green);
+  transition: all 0.3s;
 }
 .button:hover {
   cursor: pointer;
@@ -341,19 +351,72 @@ footer {
   grid-template-columns: 1fr 1fr;
   margin: 5rem 8rem;
 }
-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.heading {
+  margin-bottom: 1.5rem;
 }
 .image img {
   width: 3.5rem;
   margin: 1rem;
 }
 .content-details {
+  margin-left: 2rem;
   margin-bottom: 2rem;
 }
 .content-details p {
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+.flex-content {
+  display: flex;
+  gap: 0 4rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 2.6rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .image img {
+    width: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .image {
+    margin-left: 1rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  .image img {
+    width: 3rem;
+  }
+  .button {
+    font-size: 1.3rem;
+    padding: 0.9rem 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .body-text {
+    margin: 0 2rem;
+  }
+  .grid-container {
+    margin: 3rem 2rem;
+  }
+  .hero {
+    margin-top: 10rem;
+  }
 }
