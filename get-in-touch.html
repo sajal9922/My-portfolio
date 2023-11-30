@@ -52,9 +52,31 @@
 
     <!-- ---------------Hero-------------- -->
     <main class="hero">
-      <div class="image-container"></div>
-      <h1>Get in touch!</h1>
+      <div class="title">
+        <h1>Get in touch!</h1>
+      </div>
+
+      <!-- --------------form------------- -->
+
+      <form action="/submit" method="post">
+        <!-- Name Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Message Textarea -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
     </main>
+
+    <!-- -----------------footer------------- -->
     <footer>
       <div class="footer-icon">
         <a href="#" class="icon"
