@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Get in touch</title>
     <link rel="stylesheet" href="./home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,24 +13,6 @@
     />
   </head>
   <body>
-    <!-- -----------Navigation----------- -->
-    <!-- <nav class="nav-bar">
-      <div class="logo">
-        <a href="#">
-          <p>port<span class="green">folio</span></p>
-        </a>
-      </div>
-      <ul>
-        <li class="nav-item"><a href="#">home</a></li>
-        <li class="nav-item"><a href="#">about me</a></li>
-        <li class="nav-item"><a href="#">projects</a></li>
-        <li class="nav-item"><a href="#">get in touch</a></li>
-        <li class="nav-item burger-icon">
-          <a href="#"><img src="./Images/burgermenu.png" /></a>
-        </li>
-      </ul>
-    </nav> -->
-
     <nav>
       <div class="logo">
         <a href="/home.html">
@@ -52,28 +34,37 @@
 
     <!-- ---------------Hero-------------- -->
     <main class="hero">
-      <div class="title">
-        <h1>Get in touch!</h1>
-      </div>
-
-      <!-- --------------form------------- -->
-
-      <form action="/submit" method="post">
-        <!-- Name Input -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <!-- Email Input -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <!-- Message Textarea -->
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <!-- Submit Button -->
-        <button type="submit">Submit</button>
-      </form>
+      <section class="form-container">
+        <div class="title">
+          <h2>Get in touch</h2>
+          <p class="message">
+            Drop me a line, give me a call, or send me a message by submitting
+            the form.
+          </p>
+          <p class="email">
+            <img src="Images/email.png" alt="" />
+            <a href="mailto:sajal.moni@gmail.com"> sajal.moni@gmail.com</a>
+          </p>
+          <p class="phone">
+            <img src="Images/phone.png" alt="" />
+            <a href="tel:+358458074447">+358458074447</a>
+          </p>
+        </div>
+        <!-- --------------form------------- -->
+        <form action="/submit" method="post">
+          <!-- Name Input -->
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <!-- Email Input -->
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <!-- Message Textarea -->
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <!-- Submit Button -->
+          <button class="button border-button" type="submit">Submit</button>
+        </form>
+      </section>
     </main>
 
     <!-- -----------------footer------------- -->
