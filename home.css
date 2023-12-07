@@ -512,7 +512,7 @@ form .button {
 
 .feature {
   gap: 4rem 8rem;
-  margin: 0 20rem;
+  margin: 0 15rem;
   margin-bottom: 10rem;
   border-bottom: 2px solid var(--text-green);
   padding-bottom: 2rem;
